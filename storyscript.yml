@@ -1,18 +1,10 @@
 entrypoint:
   help: 'Execute a javascript file.'
   args:
-    - type: file
-      required: true
-      help: 'Path to the javascript file to execute.'
-    - type: *
-      many: true
-      help: 'Pass any number of arguments to the file being exected.'
-  result:
-    type: *
+  - type: file
+    required: true
+    help: 'Path to the javascript file to execute.'
+  additional_args: true
+  additional_kwargs: true
 
 volume: true
-
-alias:
-  - node
-  - js
-  - javascript
