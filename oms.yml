@@ -1,7 +1,18 @@
-omg: 1
+oms: 1
+
+info:
+  version: 1.0.0
+  title: Nodejs
+  description: Execute a Node file.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
 actions:
-  entrypoint:
+  execute:
     help: Execute a javascript file.
+    format:
+      command: ['node']
     arguments:
       path:
         type: string
